@@ -112,7 +112,8 @@
   .plan h3{font-size:20px;margin-bottom:4px}
   .plan .price{font-size:15px;color:var(--sage);margin-bottom:16px}
   .plan ul{list-style:none;display:grid;gap:10px}
-  .plan li{display:flex;gap:9px;font-size:15px;color:var(--ink)}
+  .plan li{display:flex;gap:9px;font-size:15px;color:var(--ink);align-items:flex-start;text-align:left}
+  .plan li .d{flex:0 0 auto}
   .plan li .d{color:var(--emerald);font-weight:800}
 
   footer{padding:48px 0 64px;color:var(--sage);font-size:14px;text-align:center;border-top:1px solid var(--hairline)}
@@ -212,13 +213,14 @@
     <div class="wrap" style="text-align:center">
       <span class="eyebrow">Pricing</span>
       <h2>Start free. Upgrade for backup and unlimited scans.</h2>
-      <p class="section-lede" style="margin:0 auto">Add as many family members and records as you like — free. Premium unlocks unlimited scanning and iCloud backup.</p>
+      <p class="section-lede" style="margin:0 auto">Start free with room for a couple of family members. Premium unlocks unlimited family members and records, plus unlimited scanning and iCloud backup.</p>
       <div class="plans">
         <div class="plan">
           <h3>Free</h3>
-          <div class="price">Everything you need to get organized</div>
+          <div class="price">Everything you need to get started</div>
           <ul>
-            <li><span class="d">✓</span> Unlimited profiles, doctors &amp; medicines</li>
+            <li><span class="d">✓</span> Up to 3 family profiles</li>
+            <li><span class="d">✓</span> Up to 10 doctors &amp; 10 medicines each</li>
             <li><span class="d">✓</span> Allergies, conditions, appointments &amp; notes</li>
             <li><span class="d">✓</span> Emergency card &amp; PDF sharing</li>
             <li><span class="d">✓</span> 5 free card &amp; bottle scans</li>
@@ -227,9 +229,10 @@
         <div class="plan pro">
           <span class="tag">Premium</span>
           <h3>Premium</h3>
-          <div class="price">Backup &amp; unlimited scanning</div>
+          <div class="price">Unlimited everything &amp; backup</div>
           <ul>
             <li><span class="d">✓</span> Everything in Free</li>
+            <li><span class="d">✓</span> <b>Unlimited</b> family members, doctors &amp; medicines</li>
             <li><span class="d">✓</span> <b>Unlimited</b> card &amp; bottle scanning</li>
             <li><span class="d">✓</span> <b>iCloud backup</b> to your private database</li>
             <li><span class="d">✓</span> Peace of mind across devices</li>
