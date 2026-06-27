@@ -1,0 +1,5 @@
+name = "shrill-art-8d7b"
+compatibility_date = "2026-06-25"
+
+[assets]
+directory = "."
