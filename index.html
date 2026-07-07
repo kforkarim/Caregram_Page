@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<meta name="theme-color" content="#55A86C">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Caregram — Your family's health, kept private</title>
 <meta name="description" content="Caregram keeps your family's health records organized and private — stored on your device, never on our servers. Scan cards and bottles, keep doctors, medicines, allergies, and emergency info in one calm place.">
@@ -37,8 +42,9 @@
     backdrop-filter:saturate(160%) blur(12px);border-bottom:1px solid var(--hairline)}
   .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
   .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:-.02em}
-  .logo{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--emerald),var(--emerald-dark));
-    display:grid;place-items:center;color:#fff;font-weight:800}
+  .logo{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--mint-btn),var(--emerald));
+    display:grid;place-items:center;color:#fff;font-weight:800;overflow:hidden}
+  .logo svg{width:20px;height:20px;display:block}
   .nav-links{display:flex;gap:26px;font-size:15px;color:var(--sage);font-weight:500}
   .nav-links a:hover{color:var(--ink)}
   @media(max-width:720px){.nav-links{display:none}}
@@ -134,7 +140,7 @@
 
 <header class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="#top"><span class="logo">C</span> Caregram</a>
+    <a class="brand" href="#top"><span class="logo"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect x="11" y="7" width="18" height="26" rx="4" fill="#fff"/><rect x="14.5" y="12" width="11" height="2.4" rx="1.2" fill="#7BB48B"/><rect x="14.5" y="17" width="11" height="2.4" rx="1.2" fill="#55A86C"/><rect x="14.5" y="22" width="7.5" height="2.4" rx="1.2" fill="#7BB48B"/><rect x="24" y="24" width="2.4" height="7" rx="1" fill="#55A86C"/><rect x="21.8" y="26.2" width="7" height="2.4" rx="1" fill="#55A86C"/></svg></span> Caregram</a>
     <nav class="nav-links">
       <a href="#how">How it works</a>
       <a href="#features">Features</a>
@@ -188,12 +194,15 @@
       <div class="features">
         <div class="feat"><div class="ic">👥</div><h3>Every family member</h3><p>Separate profiles for you, your kids, and your parents — each with their own records and emergency info.</p></div>
         <div class="feat"><div class="ic">📷</div><h3>Smart card scanning</h3><p>Doctor cards, insurance, and medical IDs capture only when the card is held flat and square, so the image is clean and the text reads right.</p></div>
-        <div class="feat"><div class="ic">💊</div><h3>Medicine from the bottle</h3><p>Scan a prescription label and Caregram pulls the drug name, dosage, pharmacy, and refill details for you.</p></div>
+        <div class="feat"><div class="ic">✨</div><h3>On-device records assistant</h3><p>Ask for a doctor-visit summary, questions to ask your provider, or what's coming up — powered by on-device intelligence. Your health data never leaves your phone.</p></div>
+        <div class="feat"><div class="ic">💊</div><h3>Medicine from the bottle</h3><p>Scan a prescription label and Caregram pulls the drug name, dosage, pharmacy, and refill details — with medication names checked against a real drug reference so they're accurate.</p></div>
         <div class="feat"><div class="ic">🎙️</div><h3>Speak your list</h3><p>Add allergies and conditions by voice — a live waveform shows it's listening, and it splits "nuts, peanuts, grapes" into separate items.</p></div>
         <div class="feat"><div class="ic">🆘</div><h3>Emergency card</h3><p>Blood type, allergies, conditions, medications, and emergency contacts — the critical things, at a glance, tap-to-call ready.</p></div>
+        <div class="feat"><div class="ic">🔒</div><h3>Face ID lock</h3><p>Optionally require Face ID to open the app, so your family's records stay private even if someone else picks up your phone.</p></div>
         <div class="feat"><div class="ic">☁️</div><h3>iCloud backup</h3><p>Optional backup to your own private iCloud, so a lost or replaced phone never means lost records. Never our servers.</p></div>
         <div class="feat"><div class="ic">📅</div><h3>Appointments &amp; reminders</h3><p>Keep visits, prep instructions, and refill reminders straight — dictate an appointment and it sorts out the date for you.</p></div>
         <div class="feat"><div class="ic">🏥</div><h3>Pharmacies &amp; doctors</h3><p>See your medicines grouped by where you fill them, and keep every provider's contact details in one tap.</p></div>
+        <div class="feat"><div class="ic">📝</div><h3>Quick notes</h3><p>Jot or dictate a quick note — a symptom, a question, something the doctor said — and keep it with the right family member's records.</p></div>
         <div class="feat"><div class="ic">📄</div><h3>Share as a PDF</h3><p>Export a clean summary for a new doctor, a caregiver, or a school form — without handing over the whole app.</p></div>
       </div>
     </div>
@@ -210,7 +219,7 @@
         </div>
         <ul>
           <li><span class="check">✓</span><span><b>On-device by default.</b> Records are stored on your iPhone, not in our cloud.</span></li>
-          <li><span class="check">✓</span><span><b>On-device intelligence.</b> Card and bottle scanning and voice transcription run on your phone.</span></li>
+          <li><span class="check">✓</span><span><b>On-device intelligence.</b> Card and bottle scanning, voice transcription, and the records assistant all run on your phone — never a third-party AI service.</span></li>
           <li><span class="check">✓</span><span><b>Your iCloud, your choice.</b> Optional backup goes to your private iCloud database — never ours.</span></li>
           <li><span class="check">✓</span><span><b>No accounts, no tracking.</b> No sign-up, no ads, no selling data.</span></li>
         </ul>
@@ -230,8 +239,8 @@
           <div class="price">Everything you need to get started</div>
           <ul>
             <li><span class="d">✓</span> Up to 3 family profiles</li>
-            <li><span class="d">✓</span> Up to 10 doctors &amp; 10 medicines each</li>
-            <li><span class="d">✓</span> Allergies, conditions, appointments &amp; notes</li>
+            <li><span class="d">✓</span> Up to 10 doctors &amp; 10 medicines per profile</li>
+            <li><span class="d">✓</span> Unlimited allergies, conditions, appointments &amp; notes</li>
             <li><span class="d">✓</span> Emergency card &amp; PDF sharing</li>
             <li><span class="d">✓</span> 5 free card &amp; bottle scans</li>
           </ul>
@@ -267,7 +276,7 @@
 
 <footer>
   <div class="wrap">
-    <div class="brand"><span class="logo">C</span> Caregram</div>
+    <div class="brand"><span class="logo"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect x="11" y="7" width="18" height="26" rx="4" fill="#fff"/><rect x="14.5" y="12" width="11" height="2.4" rx="1.2" fill="#7BB48B"/><rect x="14.5" y="17" width="11" height="2.4" rx="1.2" fill="#55A86C"/><rect x="14.5" y="22" width="7.5" height="2.4" rx="1.2" fill="#7BB48B"/><rect x="24" y="24" width="2.4" height="7" rx="1" fill="#55A86C"/><rect x="21.8" y="26.2" width="7" height="2.4" rx="1" fill="#55A86C"/></svg></span> Caregram</div>
     <p>Every record. One calm place.</p>
     <p style="margin-top:8px"><a href="mailto:hello@caregram.co" style="color:var(--emerald);font-weight:600">hello@caregram.co</a></p>
     <p style="margin-top:12px"><a href="privacy.html" style="color:var(--sage)">Privacy Policy</a> &nbsp;·&nbsp; <a href="terms.html" style="color:var(--sage)">Terms of Use</a></p>
