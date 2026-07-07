@@ -11,6 +11,16 @@
     --emerald:#55A86C; --emerald-dark:#3E8355; --mint:#D6E8DC; --mint-btn:#7BB48B; --danger:#C2563F;
     --hairline:#E1E7E2; --shadow:0 10px 30px rgba(27,61,37,.08);
   }
+  /* Dark mode follows the visitor's system setting automatically. Dark surfaces keep a green tint
+     (not pure black) to hold the brand identity; the accent green brightens slightly for contrast,
+     text is a soft off-white, and cards sit lighter than the background for depth. */
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0F1712; --card:#18231C; --ink:#EAF2EC; --sage:#9DB4A5;
+      --emerald:#6FC088; --emerald-dark:#5AA873; --mint:#26332B; --mint-btn:#4E8A63; --danger:#E0745C;
+      --hairline:#28362D; --shadow:0 10px 30px rgba(0,0,0,.45);
+    }
+  }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
   body{
