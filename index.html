@@ -7,9 +7,9 @@
 <meta name="description" content="Caregram keeps your family's health records organized and private — stored on your device, never on our servers. Scan cards and bottles, keep doctors, medicines, allergies, and emergency info in one calm place.">
 <style>
   :root{
-    --bg:#F2F8F4; --card:#FFFFFF; --ink:#1E3A2E; --sage:#5E8B79;
-    --emerald:#3C8C68; --emerald-dark:#2E6E51; --mint:#DCEFE5; --danger:#C2563F;
-    --hairline:#E4EFE9; --shadow:0 10px 30px rgba(30,58,46,.08);
+    --bg:#EBF1ED; --card:#FFFFFF; --ink:#1B3D25; --sage:#58715F;
+    --emerald:#55A86C; --emerald-dark:#3E8355; --mint:#D6E8DC; --mint-btn:#7BB48B; --danger:#C2563F;
+    --hairline:#E1E7E2; --shadow:0 10px 30px rgba(27,61,37,.08);
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -42,7 +42,7 @@
   .lede{font-size:18px;color:var(--sage);max-width:30em;margin-bottom:26px}
   @media(max-width:860px){.lede{margin-left:auto;margin-right:auto}}
   .cta{display:inline-flex;flex-direction:column;align-items:flex-start;gap:4px;
-    background:var(--ink);color:#fff;padding:14px 26px;border-radius:14px;font-weight:700;font-size:16px;
+    background:linear-gradient(135deg,var(--mint-btn),var(--emerald));color:#fff;padding:14px 26px;border-radius:14px;font-weight:700;font-size:16px;
     box-shadow:var(--shadow);transition:transform .15s ease}
   .cta:hover{transform:translateY(-2px)}
   .cta small{font-weight:500;opacity:.7;font-size:12px}
@@ -51,7 +51,7 @@
   /* Phone */
   .phone-stage{position:relative;display:flex;justify-content:center}
   .phone{width:280px;max-width:78vw;border-radius:42px;padding:12px;background:#0e201a;
-    box-shadow:0 30px 60px rgba(30,58,46,.22);position:relative}
+    box-shadow:0 30px 60px rgba(27,61,37,.22);position:relative}
   .phone img{width:100%;display:block;border-radius:30px}
   .glow{position:absolute;border-radius:50%;filter:blur(40px);z-index:-1}
   .glow.a{width:320px;height:320px;background:rgba(124,196,162,.40);top:-60px;right:-40px}
