@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["57C85XZ235.com.caregram.Caregram"],
+        "components": [
+          {
+            "/": "/epic/callback"
+          }
+        ]
+      }
+    ]
+  }
+}
