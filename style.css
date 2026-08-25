@@ -65,7 +65,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .phone img { width: 100%; height: auto; display: block; }
 .phone-hero { width: 330px; transform: rotate(1.3deg); }
 .privacy-float, .summary-float { position: absolute; z-index: 4; display: flex; align-items: center; gap: 11px; min-width: 205px; padding: 14px 16px; border: 1px solid rgba(220,231,224,.9); border-radius: 17px; background: rgba(255,255,255,.94); box-shadow: var(--shadow); backdrop-filter: blur(12px); }
-.privacy-float { top: 108px; left: -8px; }
+.privacy-float { top: 62px; left: -8px; }
 .summary-float { right: -6px; bottom: 128px; }
 .privacy-float b, .summary-float b { display: block; margin-bottom: 2px; color: var(--ink); font-size: 13px; }
 .privacy-float small, .summary-float small { display: block; color: var(--sage); font-size: 11px; }
@@ -143,6 +143,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .price-card ul { display: grid; gap: 13px; margin: 26px 0 0; padding: 24px 0 0; border-top: 1px solid var(--line); list-style: none; }
 .price-card li { display: flex; align-items: center; gap: 10px; color: var(--ink); font-size: 13px; }
 .pricing-note { margin: 24px auto 0; text-align: center; color: var(--sage); font-size: 12px; }
+.price-tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--line); }
+.price-tier { padding: 12px 10px; border-radius: 14px; border: 1px solid var(--line); text-align: center; background: var(--paper); }
+.price-tier.best { border-color: var(--green); background: var(--green-soft); }
+.price-tier .tier-price { display: block; color: var(--ink-strong); font-size: 16px; font-weight: 760; letter-spacing: -.02em; }
+.price-tier .tier-price small { font-size: 11px; font-weight: 500; opacity: .72; }
+.price-tier .tier-label { display: block; margin-top: 4px; color: var(--sage); font-size: 10px; font-weight: 650; letter-spacing: .01em; }
+.price-tier.best .tier-label { color: var(--green-dark); }
 
 .final-cta { padding: 0 0 96px; background: var(--paper); }
 .final-panel { min-height: 360px; display: flex; align-items: center; justify-content: space-between; gap: 50px; padding: 66px; overflow: hidden; position: relative; border-radius: 34px; background: #dff2e7; }
@@ -176,7 +183,7 @@ footer { padding: 55px 0; border-top: 1px solid var(--line); background: white; 
   .hero-lede { margin-inline: auto; }
   .hero-actions, .trust-row { justify-content: center; }
   .hero-visual { min-height: 650px; }
-  .privacy-float { left: calc(50% - 280px); }
+  .privacy-float { top: 62px; left: calc(50% - 280px); }
   .summary-float { right: calc(50% - 290px); }
   .features-layout { grid-template-columns: 1fr; gap: 46px; }
   .features-intro { position: static; max-width: 700px; }
@@ -195,7 +202,7 @@ footer { padding: 55px 0; border-top: 1px solid var(--line); background: white; 
   .hero-visual { min-height: 570px; }
   .phone-hero { width: 280px; }
   .privacy-float, .summary-float { min-width: 178px; padding: 12px; }
-  .privacy-float { top: 78px; left: 0; }
+  .privacy-float { top: 40px; left: 0; }
   .summary-float { right: 0; bottom: 90px; }
   .proof-grid { grid-template-columns: repeat(2, 1fr); row-gap: 20px; }
   .proof-grid > div { border-right: 0; padding: 2px 16px; }
