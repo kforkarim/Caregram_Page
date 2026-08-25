@@ -143,6 +143,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .price-card ul { display: grid; gap: 13px; margin: 26px 0 0; padding: 24px 0 0; border-top: 1px solid var(--line); list-style: none; }
 .price-card li { display: flex; align-items: center; gap: 10px; color: var(--ink); font-size: 13px; }
 .pricing-note { margin: 24px auto 0; text-align: center; color: var(--sage); font-size: 12px; }
+.price-tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--line); }
+.price-tier { padding: 12px 10px; border-radius: 14px; border: 1px solid var(--line); text-align: center; background: var(--paper); }
+.price-tier.best { border-color: var(--green); background: var(--green-soft); }
+.price-tier .tier-price { display: block; color: var(--ink-strong); font-size: 16px; font-weight: 760; letter-spacing: -.02em; }
+.price-tier .tier-price small { font-size: 11px; font-weight: 500; opacity: .72; }
+.price-tier .tier-label { display: block; margin-top: 4px; color: var(--sage); font-size: 10px; font-weight: 650; letter-spacing: .01em; }
+.price-tier.best .tier-label { color: var(--green-dark); }
 
 .final-cta { padding: 0 0 96px; background: var(--paper); }
 .final-panel { min-height: 360px; display: flex; align-items: center; justify-content: space-between; gap: 50px; padding: 66px; overflow: hidden; position: relative; border-radius: 34px; background: #dff2e7; }
