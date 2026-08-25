@@ -64,13 +64,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .phone-rim { position: relative; z-index: 1; overflow: hidden; border-radius: 38px; background: white; }
 .phone img { width: 100%; height: auto; display: block; }
 .phone-hero { width: 330px; transform: rotate(1.3deg); }
-.privacy-float, .summary-float { position: absolute; z-index: 4; display: flex; align-items: center; gap: 11px; min-width: 205px; padding: 14px 16px; border: 1px solid rgba(220,231,224,.9); border-radius: 17px; background: rgba(255,255,255,.94); box-shadow: var(--shadow); backdrop-filter: blur(12px); }
-.privacy-float { top: 62px; left: -8px; }
-.summary-float { right: -6px; bottom: 128px; }
-.privacy-float b, .summary-float b { display: block; margin-bottom: 2px; color: var(--ink); font-size: 13px; }
-.privacy-float small, .summary-float small { display: block; color: var(--sage); font-size: 11px; }
-.mini-icon { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 11px; background: #e9f3ef; color: var(--blue); font-size: 18px; font-weight: 800; }
-.mini-icon.green { background: var(--green-soft); color: var(--green); }
 
 .proof-strip { border-block: 1px solid var(--line); background: rgba(255,255,255,.72); }
 .proof-grid { display: grid; grid-template-columns: repeat(4, 1fr); padding-block: 24px; }
@@ -183,8 +176,6 @@ footer { padding: 55px 0; border-top: 1px solid var(--line); background: white; 
   .hero-lede { margin-inline: auto; }
   .hero-actions, .trust-row { justify-content: center; }
   .hero-visual { min-height: 650px; }
-  .privacy-float { top: 62px; left: calc(50% - 280px); }
-  .summary-float { right: calc(50% - 290px); }
   .features-layout { grid-template-columns: 1fr; gap: 46px; }
   .features-intro { position: static; max-width: 700px; }
   .privacy-panel { padding: 52px; gap: 42px; }
@@ -201,9 +192,6 @@ footer { padding: 55px 0; border-top: 1px solid var(--line); background: white; 
   .trust-row { display: grid; justify-content: center; text-align: left; }
   .hero-visual { min-height: 570px; }
   .phone-hero { width: 280px; }
-  .privacy-float, .summary-float { min-width: 178px; padding: 12px; }
-  .privacy-float { top: 40px; left: 0; }
-  .summary-float { right: 0; bottom: 90px; }
   .proof-grid { grid-template-columns: repeat(2, 1fr); row-gap: 20px; }
   .proof-grid > div { border-right: 0; padding: 2px 16px; }
   .proof-grid > div:first-child { padding-left: 16px; }
