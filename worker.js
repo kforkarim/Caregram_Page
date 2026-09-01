@@ -9,7 +9,7 @@ export default {
       const response = await env.ASSETS.fetch(request);
       const headers = new Headers(response.headers);
       headers.set("Content-Type", "application/json");
-      headers.set("Cache-Control", "max-age=86400, s-maxage=86400");
+      headers.set("Cache-Control", "max-age=3600, s-maxage=3600");
       return new Response(response.body, { status: response.status, headers });
     }
 
