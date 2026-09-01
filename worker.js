@@ -1,6 +1,7 @@
 // AASA served inline so it's always in sync with deployments.
-// Cloudflare Workers excludes dotfile directories (.well-known/) from asset
-// uploads, so the file-based approach silently served a stale cached version.
+// Cloudflare Workers uploads dotfile directories as assets, so we must:
+// 1. Serve AASA inline (not from assets) to prevent stale file serving.
+// 2. Block /.git and /.wrangler to prevent accidental credential exposure.
 const AASA = JSON.stringify({
   applinks: {
     details: [{
@@ -17,13 +18,19 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
-    // Apple requires the AASA file to be served as application/json.
-    // Embedded inline so changes deploy atomically with worker.js.
+    // Block sensitive dotfile directories uploaded as assets.
+    if (url.pathname.startsWith("/.git/") || url.pathname.startsWith("/.wrangler/")) {
+      return new Response("Not Found", { status: 404 });
+    }
+
+    // Apple requires the AASA file served as application/json.
+    // No s-maxage so Cloudflare CDN doesn't cache it; max-age lets Apple's
+    // CDN cache for 1h as usual.
     if (url.pathname === "/.well-known/apple-app-site-association") {
       return new Response(AASA, {
         headers: {
           "Content-Type": "application/json",
-          "Cache-Control": "max-age=3600, s-maxage=3600"
+          "Cache-Control": "max-age=3600"
         }
       });
     }
