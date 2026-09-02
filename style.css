@@ -81,7 +81,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .split-heading > p { margin: 0 0 5px; }
 
 .screenshot-rail { display: grid; grid-auto-flow: column; grid-auto-columns: 370px; gap: 22px; overflow-x: auto; padding: 0 max(22px, calc((100vw - 1180px) / 2)) 26px; scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: #a8c9b6 transparent; }
-.screen-card { height: 720px; position: relative; overflow: hidden; scroll-snap-align: start; border: 1px solid var(--line); border-radius: 32px; background: #e7f4eb; }
+.screen-card { height: 780px; position: relative; overflow: hidden; scroll-snap-align: start; border: 1px solid var(--line); border-radius: 32px; background: #e7f4eb; }
 .screen-card.sage { background: #eaf3ee; }
 .screen-card.blue { background: #e7f1f3; }
 .screen-card.amber { background: #f8f0df; }
@@ -199,7 +199,7 @@ footer { padding: 55px 0; border-top: 1px solid var(--line); background: white; 
   .split-heading { grid-template-columns: 1fr; gap: 22px; }
   .section-heading h2, .features-intro h2, .privacy-copy h2, .final-panel h2 { font-size: 40px; }
   .screenshot-rail { grid-auto-columns: 310px; }
-  .screen-card { height: 640px; border-radius: 27px; }
+  .screen-card { height: 760px; border-radius: 27px; }
   .phone-card { width: 245px; top: 125px; }
   .steps-grid, .feature-grid, .pricing-grid { grid-template-columns: 1fr; }
   .steps-grid article { min-height: 250px; }
