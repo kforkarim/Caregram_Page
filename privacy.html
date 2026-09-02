@@ -55,7 +55,7 @@
   <div class="wrap">
     <span class="pill">🔒 Private by design</span>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated June 28, 2026</p>
+    <p class="updated">Last updated September 1, 2026</p>
     <p class="intro">How Caregram handles your family&#x27;s health information — in plain language.</p>
     <div class="card">
       <h2>Our approach</h2>
@@ -72,8 +72,13 @@
       <p class="body">Several parts of Caregram let you speak instead of type — voice notes, dictating an appointment, and adding allergies or conditions by voice. Recording and transcription happen on your device using Apple&#x27;s on-device speech recognition where supported. The waveform you see while recording is generated locally from your microphone input. Recordings and transcripts are stored locally and are not sent to us. When you speak a list of items (for example, several allergies), the text is split into separate entries on your device — using Apple&#x27;s on-device model where available, or a built-in local parser otherwise — and is always shown to you for review before anything is saved.</p>
       <h2>Reminders and notifications</h2>
       <p class="body">If you create reminders or enable appointment or refill reminders, Caregram schedules local notifications on your device. These are handled by iOS on your device; the reminder details are not sent to us or any server.</p>
+      <h2>Connected health records (Epic / MyChart)</h2>
+      <p class="body">Caregram can optionally connect to your health system&#x27;s patient portal — such as Epic MyChart — to sync your health records. This connection is entirely optional and off by default. If you choose to connect:</p>
+      <p class="body">Authorization uses the standard OAuth 2.0 flow provided by your health system, the same login you use on your health system&#x27;s own website. Caregram requests read-only access — we never write data back to your health record.</p>
+      <p class="body">The records we retrieve — which may include lab results, vitals, medications, immunizations, conditions, allergies, appointments, and clinical documents — are fetched directly from your health system&#x27;s servers to your device and stored locally (and in iCloud if you have iCloud backup enabled). They are not routed through or stored on any Caregram server.</p>
+      <p class="body">The access token issued by your health system is stored in your device&#x27;s iOS Keychain. We do not see, store, or transmit it. You can disconnect your health system account at any time in Settings → Health Records; doing so removes the token from your Keychain.</p>
       <h2>Apple Health</h2>
-      <p class="body">If you choose to import from Apple Health, Caregram reads only the specific items you authorize (such as blood type and date of birth) to save you typing. This access is read-only — we never write to Apple Health — and the imported values are stored only on your device.</p>
+      <p class="body">If you choose to import from Apple Health, Caregram reads only the specific items you authorize (such as lab results and vitals) to supplement records you have already entered. This access is read-only — we never write to Apple Health — and the imported values are stored only on your device.</p>
       <h2>Crash reporting</h2>
       <p class="body">If you install Caregram through TestFlight or the App Store, Apple may provide us with anonymous crash and performance reports through its standard developer tools. These reports contain technical diagnostics only — never your personal or health details. You can opt out of sharing analytics in your device&#x27;s Privacy settings.</p>
       <h2>No ads, no selling data</h2>
