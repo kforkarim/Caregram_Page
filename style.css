@@ -212,6 +212,19 @@ footer { padding: 55px 0; border-top: 1px solid var(--line); background: white; 
   .legal-content { padding: 34px 24px; border-radius: 22px; }
 }
 
+/* ── What's New / Women's Health section ── */
+.whats-new-section { padding: 104px 0; background: linear-gradient(180deg, var(--paper) 0%, #edf5ef 100%); }
+.womens-health-grid { margin-top: 56px; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 22px; }
+.womens-health-grid article { padding: 30px 28px; border-radius: 22px; background: var(--white); border: 1px solid var(--line); box-shadow: 0 4px 20px rgba(23,62,51,.05); }
+.womens-health-grid h3 { margin: 14px 0 9px; color: var(--ink-strong); font-size: 17px; font-weight: 760; letter-spacing: -.025em; }
+.womens-health-grid p { margin: 0; color: var(--sage); font-size: 14px; line-height: 1.72; }
+.wh-icon { display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; border-radius: 13px; background: var(--green-soft); color: var(--green-dark); font-size: 20px; }
+
+@media (max-width: 760px) {
+  .womens-health-grid { grid-template-columns: 1fr; }
+  .whats-new-section { padding: 72px 0; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }
