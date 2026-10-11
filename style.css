@@ -66,7 +66,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .phone-hero { width: 330px; transform: rotate(1.3deg); }
 
 .proof-strip { border-block: 1px solid var(--line); background: rgba(255,255,255,.72); }
-.proof-grid { display: grid; grid-template-columns: repeat(4, 1fr); padding-block: 24px; }
+.proof-grid { display: grid; grid-template-columns: repeat(5, 1fr); padding-block: 24px; }
 .proof-grid > div { display: grid; gap: 3px; padding: 2px 28px; border-right: 1px solid var(--line); }
 .proof-grid > div:first-child { padding-left: 0; }
 .proof-grid > div:last-child { border-right: 0; }
@@ -211,6 +211,14 @@ footer { padding: 55px 0; border-top: 1px solid var(--line); background: white; 
   .legal-hero { padding: 60px 0 32px; }
   .legal-content { padding: 34px 24px; border-radius: 22px; }
 }
+
+/* ── Language strip ── */
+.lang-strip { border-block: 1px solid var(--line); background: var(--white); padding: 32px 0; }
+.lang-label { margin: 0 0 20px; text-align: center; font-size: 12px; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; color: var(--green); }
+.lang-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.lang-grid span { display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 12px 20px; border: 1px solid var(--line); border-radius: 14px; background: var(--paper); min-width: 110px; text-align: center; }
+.lang-grid b { font-size: 16px; color: var(--ink-strong); letter-spacing: -.01em; }
+.lang-grid small { font-size: 11px; color: var(--sage); font-weight: 600; }
 
 /* ── What's New / Women's Health section ── */
 .whats-new-section { padding: 104px 0; background: linear-gradient(180deg, var(--paper) 0%, #edf5ef 100%); }
